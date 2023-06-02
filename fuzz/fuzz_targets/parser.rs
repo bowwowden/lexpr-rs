@@ -11,7 +11,7 @@ fn check_roundtrip_default(input: Value, printed: &str) {
 }
 
 
-fuzz_target!(|input: f16| {
+fuzz_target!(|input: f64| {
     
     let input_as_string: &str = &*input.to_string();
 

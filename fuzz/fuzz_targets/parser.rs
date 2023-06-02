@@ -20,6 +20,7 @@ fuzz_target!(|input: f64| {
     if !cfg!(feature = "fast-float-parsing") {
         check_roundtrip_default(sexp!(-1.0015065576612683), "-1.0015065576612683");
         check_roundtrip_default(sexp!(-1.360438755021694e308), "-1.360438755021694e308");
+        
         // check_roundtrip_default(sexp!(input), input_as_string);
     }
 

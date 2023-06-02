@@ -23,6 +23,8 @@ fuzz_target!(|input: f32| {
         check_roundtrip_default(sexp!(-1.360438755021694e308), "-1.360438755021694e308");
         // check_roundtrip_default(sexp!(input), input_as_string);
     }
+
+    sexp!(input)
     
 
 });

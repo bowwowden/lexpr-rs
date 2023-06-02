@@ -10,7 +10,7 @@ cargo-fuzz = true
 
 [dependencies]
 libfuzzer-sys = "0.4"
-lexpr-rs = { path = "../lexpr" }
+lexpr = { path = "../lexpr" }
 
 # Prevent this from interfering with workspaces
 [workspace]

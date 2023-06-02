@@ -27,7 +27,7 @@ fuzz_target!(|input: f64| {
 
     // assert_eq!(sexp!(input), Value::from(input));
     // no assertion to just test if the parsing is okay taking a random float
-    sexp!(input);
+    sexp!(,input);
 
 
 });

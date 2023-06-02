@@ -10,16 +10,15 @@ fuzz_target!(|input: u16| {
     assert_eq!(sexp!(-64.0), Value::from(-64.0));
 
     // test to break number parse
-    assert_eq!(sexp!(input), Value::from(input));
+    assert_eq!(sexp!(,input), Value::from(input));
 
     // testing array
-    // taken from sexp-macro - to show it takes variables inside the sexp! macro.
+    // taken from sexp-macro - to show it takes variables inside the sexp! macro if they are unquoted
     let three = 3;
     assert_eq!(sexp!((1 2 ,three)), Value::list(vec![1, 2, 3]));
 
     // fails with random numbers though why?
     assert_eq!(sexp!((1 2 ,input)), Value::list(vec![1, 2, input]));
-    
 
 });
 

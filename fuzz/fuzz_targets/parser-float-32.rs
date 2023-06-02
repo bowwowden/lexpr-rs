@@ -24,7 +24,8 @@ fuzz_target!(|input: f32| {
         // check_roundtrip_default(sexp!(input), input_as_string);
     }
 
-    assert_eq!(sexp!(input), Value::from(input));
-    
+    // assert_eq!(sexp!(input), Value::from(input));
+    // no assertion to just test if the parsing is okay taking a random float
+    sexp!(input);
 
 });

@@ -33,3 +33,9 @@ name = "parser_numbers"
 path = "fuzz_targets/parser_numbers.rs"
 test = false
 doc = false
+
+[[bin]]
+name = "parser_cons"
+path = "fuzz_targets/parser_cons.rs"
+test = false
+doc = false

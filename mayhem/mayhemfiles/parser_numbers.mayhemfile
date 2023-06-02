@@ -1,0 +1,6 @@
+project: lexpr-rs
+target: parser_numbers
+duration: 300
+
+cmds:
+  - cmd: /parser_numbers

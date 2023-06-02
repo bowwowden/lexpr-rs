@@ -20,3 +20,9 @@ FROM --platform=linux/amd64 rustlang/rust:nightly
 
 
 COPY --from=builder /lexpr-rs/fuzz/target/x86_64-unknown-linux-gnu/release/parser /
+
+COPY --from=builder /lexpr-rs/fuzz/target/x86_64-unknown-linux-gnu/release/parser_float_32 /
+
+COPY --from=builder /lexpr-rs/fuzz/target/x86_64-unknown-linux-gnu/release/parser_numbers /
+
+COPY --from=builder /lexpr-rs/fuzz/target/x86_64-unknown-linux-gnu/release/parser_cons /

@@ -1,0 +1,6 @@
+project: lexpr-rs
+target: parser_float_32
+duration: 300
+
+cmds:
+  - cmd: /parser_float_32

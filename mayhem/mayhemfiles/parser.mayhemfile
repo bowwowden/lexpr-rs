@@ -1,0 +1,6 @@
+project: lexpr-rs
+target: parser
+duration: 300
+
+cmds:
+  - cmd: /parser

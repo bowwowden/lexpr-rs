@@ -55,9 +55,9 @@ jobs:
       matrix:
         mayhemfile:
         - mayhem/mayhemfiles/parser.mayhemfile
-        - mayhem/mayhemfiles/parser_float_32.mayhemfile
-        - mayhem/mayhemfiles/parser_numbers.mayhemfile
-        - mayhem/mayhemfiles/parser_cons.mayhemfile
+        - mayhem/mayhemfiles/parser-float-32.mayhemfile
+        - mayhem/mayhemfiles/parser-numbers.mayhemfile
+        - mayhem/mayhemfiles/parser-cons.mayhemfile
     steps:
     - uses: actions/checkout@v3
     - name: Start analysis for ${{ matrix.mayhemfile }}

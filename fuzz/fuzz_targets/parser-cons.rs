@@ -11,7 +11,7 @@ fuzz_target!(|input: u16| {
 
     // test fuzz
     assert_eq!(
-        sexp!{(a . input)},
+        sexp! {(a . input)},
         Value::cons(Value::symbol("a"), Value::from(input))
     );
 

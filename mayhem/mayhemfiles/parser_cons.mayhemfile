@@ -1,6 +1,0 @@
-project: lexpr-rs
-target: parser_cons
-duration: 300
-
-cmds:
-  - cmd: /parser_cons

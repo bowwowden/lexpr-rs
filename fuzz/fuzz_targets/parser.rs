@@ -25,7 +25,7 @@ fuzz_target!(|input: f16| {
     }
 
     // taking the fuzz input out of the assertion not to cause unnecessary defects
-    sexp!(input)
+    sexp!(input);
 
 
 });

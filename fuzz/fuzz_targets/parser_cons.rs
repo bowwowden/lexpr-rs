@@ -14,5 +14,6 @@ fuzz_target!(|input: u16| {
         sexp!({a . input}),
         Value::cons(Value::symbol("a", Value::from(input)))
     );
+    
 
 });

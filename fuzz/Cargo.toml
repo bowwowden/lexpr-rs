@@ -21,3 +21,15 @@ name = "parser"
 path = "fuzz_targets/parser.rs"
 test = false
 doc = false
+
+[[bin]]
+name = "parser_float_32"
+path = "fuzz_targets/parser_float_32.rs"
+test = false
+doc = false
+
+[[bin]]
+name = "parser_numbers"
+path = "fuzz_targets/parser_numbers.rs"
+test = false
+doc = false

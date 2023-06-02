@@ -25,4 +25,3 @@ COPY --from=builder /lexpr-rs/fuzz/target/x86_64-unknown-linux-gnu/release/parse
 
 COPY --from=builder /lexpr-rs/fuzz/target/x86_64-unknown-linux-gnu/release/parser-numbers /
 
-COPY --from=builder /lexpr-rs/fuzz/target/x86_64-unknown-linux-gnu/release/parser-cons /

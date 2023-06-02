@@ -24,7 +24,7 @@ fuzz_target!(|input: f32| {
         // check_roundtrip_default(sexp!(input), input_as_string);
     }
 
-    sexp!(input);
+    assert_eq!(sexp!(input), Value::from(input));
     
 
 });

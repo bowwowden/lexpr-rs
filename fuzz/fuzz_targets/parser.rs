@@ -10,6 +10,7 @@ fn check_roundtrip_default(input: Value, printed: &str) {
     assert_eq!(input, output);
 }
 
+// https://docs.rs/crate/lexpr/latest 
 
 fuzz_target!(|input: f64| {
     
@@ -25,7 +26,7 @@ fuzz_target!(|input: f64| {
     }
 
     // taking the fuzz input out of the assertion not to cause unnecessary defects
-    sexp!(input);
-
+    assert_eq!(sexp!(input), Value::from(input));
+    
 
 });
